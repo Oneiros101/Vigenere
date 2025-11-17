@@ -55,7 +55,7 @@ def decrypt(cipher, key):
             plaintext += decrypted_char
 
     print(f"Cipher ------> {cipher}")
-    print(f"Plaintext --> {plaintext}")
+    print(f"Plaintext ---> {plaintext}")
 
 
 def _repeat_key(text, key):
