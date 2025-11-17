@@ -71,3 +71,4 @@ def _repeat_key(text, key):
             key_index += 1
 
     return repeated_key
+
