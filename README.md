@@ -64,7 +64,7 @@ python vigenere.py -k "SECRET" -e "HELLO WORLD"
 ### Decrypting:
 
 ``` bash
-python vigenere.py -k "SECRET" -d "RIJVS UYVJN"
+python vigenere.py -k "SECRET" -d "ZINCS PGVNU"
 ```
 
 ------------------------------------------------------------------------
