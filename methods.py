@@ -49,10 +49,6 @@ def decrypt(cipher, key):
     plaintext = ""
     REPEATED_KEY = _repeat_key(cipher, key)
 
-   # print(f"DEBUG: Cipher --------> {cipher}")
-   # print(f"DEBUG: Repeated Key --> {REPEATED_KEY}")
-   # print(f"DEBUG: Key pairs: {list(zip(cipher, REPEATED_KEY))}")
-
     for cipher_char, key_char in zip(cipher, REPEATED_KEY):
         if not cipher_char.isalpha():
             plaintext += cipher_char
