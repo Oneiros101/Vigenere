@@ -67,7 +67,9 @@ def decrypt(cipher, key):
     print(f"Cipher ------> {cipher}")
     print(f"Plaintext ---> {plaintext}")
 
-
+# Helper method to repeat key along plaintext length
+# plaintext ----> "something is about to happen", key = "sun"
+# repeated_key -> "sunsunsun su nsuns un sunsun" 
 def _repeat_key(text, key):
     repeated_key = ""
     KEY_LENGTH = len(key)
