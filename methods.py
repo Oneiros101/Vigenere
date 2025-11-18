@@ -5,6 +5,13 @@
 # Pn: decimal number of an nth plaintext char
 # Kn: decimal number of an nth key char
 
+# Steps:
+# ------
+# 1. "Plain" char into decimal (Pn)
+# 2. "Key" char into decimal (Kn)
+# 3.  We get "En" in decimal
+# 4. "En" decimal into char
+
 ALPHABET_SIZE = 26
 
 def encrypt(plaintext, key):
@@ -21,10 +28,10 @@ def encrypt(plaintext, key):
             else:
                 base = ord("a")
 
-            plain_char_num = ord(plain_char) - base   # "Plain" char into decimal (Pn)
-            key_char_num = ord(key_char.upper()) - ord("A")   # "Key" char into decimal (Kn)
-            enc_num = (plain_char_num + key_char_num) % ALPHABET_SIZE   # We get "En" in decimal
-            encrypted_char = chr(enc_num + base)   # "En" decimal into char
+            plain_char_num = ord(plain_char) - base
+            key_char_num = ord(key_char.upper()) - ord("A")
+            enc_num = (plain_char_num + key_char_num) % ALPHABET_SIZE
+            encrypted_char = chr(enc_num + base)
             cipher += encrypted_char
 
     print(f"Plaintext --> {plaintext}")
