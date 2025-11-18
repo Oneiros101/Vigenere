@@ -5,11 +5,18 @@
 # Pn: decimal number of an nth plaintext char
 # Kn: decimal number of an nth key char
 
-# Steps:
-# ------
+# Encryption steps:
+# -----------------
 # 1. "Plain" char into decimal (Pn)
 # 2. "Key" char into decimal (Kn)
-# 3.  We get "En" in decimal
+# 3.  Pn + Kn = We get "En" in decimal
+# 4. "En" decimal into char
+
+# Decryption steps:
+# -----------------
+# 1. "Cipher" char into decimal (Pn)
+# 2. "Key" char into decimal (Kn)
+# 3.  Pn - Kn = We get "En" in decimal
 # 4. "En" decimal into char
 
 ALPHABET_SIZE = 26
