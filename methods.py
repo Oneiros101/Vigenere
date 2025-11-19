@@ -17,7 +17,7 @@
 # 1. "Cipher" char into decimal (Pn)
 # 2. "Key" char into decimal (Kn)
 # 3.  Pn - Kn = We get "En" in decimal
-# 4. "En" decimal into char
+# 4. "Dn" decimal into char
 
 ALPHABET_SIZE = 26
 
