@@ -74,7 +74,7 @@ python vigenere.py -k "SECRET" -d "ZINCS PGVNU"
 -   Encryption:
     `En = (Pn + Kn) mod 26`
 -   Decryption:
-    `Pn = (En - Kn) mod 26`
+    `Dn = (En - Kn) mod 26`
 
 Non‑alphabetical characters are preserved.
 
